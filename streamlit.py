@@ -15,7 +15,7 @@ if f1 is not None:
     st.write(filename)
     df = pd.read_csv(filename,encoding="ISO-8859-1")
 else:
-    df= pd.read_csv("C:/Users/ROCKSTAR/Desktop/streamlit/Superstore.csv")
+    st.error("Please upload a file.")
 
 
 col1,col2 = st.columns((2))
