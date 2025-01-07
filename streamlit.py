@@ -14,7 +14,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding="ISO-8859-1")
     
 else:
-    s=1
+    df = pd.read_csv("C:/Users/ROCKSTAR/Desktop/streamlit/Superstore.csv", encoding="ISO-8859-1")
     st.error("Please upload a file.")
 
 
