@@ -15,8 +15,8 @@ if f1 is not None:
     st.write(filename)
     df = pd.read_csv(filename,encoding="ISO-8859-1")
 else:
-    os.chdir(r"C:/Users/ROCKSTAR/Desktop/streamlit")
-    df= pd.read_csv("C:/Users/ROCKSTAR/Desktop/streamlit/Superstore.csv")
+    os.chdir("https://drive.google.com/file/d/1KAbVFKQwQXPYY9K1LLVPjahSgdzSMIGT/view?usp=drive_link")
+    df= pd.read_csv("https://drive.google.com/file/d/1KAbVFKQwQXPYY9K1LLVPjahSgdzSMIGT/view?usp=drive_link")
 
 
 col1,col2 = st.columns((2))
