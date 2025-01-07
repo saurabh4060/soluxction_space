@@ -12,7 +12,7 @@ st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding="ISO-8859-1")
-    st.write(df)
+    
 else:
     st.error("Please upload a file.")
 
