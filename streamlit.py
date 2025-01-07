@@ -14,7 +14,10 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding="ISO-8859-1")
     
 else:
-    df = pd.read_csv("C:/Users/ROCKSTAR/Desktop/streamlit/Superstore.csv")
+    url = "https://raw.githubusercontent.com/username/repository/branch/path/to/file.csv"
+
+    # Load the data into a Pandas DataFrame
+    df = pd.read_csv(url)
     st.error("Please upload a file.")
 
 
