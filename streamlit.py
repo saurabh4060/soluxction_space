@@ -23,7 +23,7 @@ col1,col2 = st.columns((2))
 
 
 
-if s=1:
+if s==1:
     df["Order Date"] = pd.to_datetime(df["Order Date"])    
          
 startdate=pd.to_datetime(df["Order Date"]).min()
