@@ -24,7 +24,7 @@ else:
             f.write(response.content)
 
     # Load the file into a DataFrame
-    df = pd.read_csv("file.csv")
+    df = pd.read_csv("Superstore.csv")
 
     st.error("Please upload a file.")
 
