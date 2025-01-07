@@ -14,7 +14,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding="ISO-8859-1")
     
 else:
-    url = "https://raw.githubusercontent.com/username/repository/branch/path/to/file.csv"
+    url = "https://github.com/saurabh4060/soluxction_space/blob/main/Superstore.csv"
 
     # Load the data into a Pandas DataFrame
     df = pd.read_csv(url)
