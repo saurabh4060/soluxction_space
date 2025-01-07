@@ -1,6 +1,7 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
+import requests
 import os #to navigate some file if needed
 import warnings
 warnings.filterwarnings('ignore')#to ignore warnings
@@ -16,8 +17,15 @@ if uploaded_file is not None:
 else:
     url = "https://github.com/saurabh4060/soluxction_space/blob/main/Superstore.csv"
 
-    # Load the data into a Pandas DataFrame
-    df = pd.read_csv(url)
+    # Download the file
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open("file.csv", "wb") as f:
+            f.write(response.content)
+
+    # Load the file into a DataFrame
+    df = pd.read_csv("file.csv")
+
     st.error("Please upload a file.")
 
 
