@@ -20,7 +20,7 @@ else:
     # Download the file
     response = requests.get(url)
     if response.status_code == 200:
-        with open("file.csv", "wb") as f:
+        with open("Superstore.csv", "wb") as f:
             f.write(response.content)
 
     # Load the file into a DataFrame
