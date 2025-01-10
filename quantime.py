@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')#to ignore warnings
 
 st.set_page_config(page_title="Quantime",page_icon=":bar_chart",layout='wide')
-st.title(" :bar_chart: Sample Quantime")
+st.title(" :bar_chart:  Quantime")
 st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow_html=True)
 file=st.file_uploader(":file_folder: upload file")
 user=0
