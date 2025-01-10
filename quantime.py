@@ -11,10 +11,10 @@ st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow
 file=st.file_uploader(":file_folder: upload file")
 user=0
 username=st.text_input("Enter Your Name")
-password=st.number_input("Enter pass")
-if username=="Saurabh" and password==1234:
+password=st.text_input("Enter pass")
+if username=="Saurabh" and password=="1234":
     accsess=1
-    print(f"hello {username} Welcome" )
+    st.write(f"hello {username} Welcome" )
     
     if file is not None:
         st.write(file)
